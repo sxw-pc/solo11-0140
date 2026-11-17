@@ -3,3 +3,11 @@ __pycache__/
 .pytest_cache/
 *.egg-info/
 build/
+.venv/
+venv/
+node_modules/
+*.pyc
+.coverage
+.benchmarks/
+.env
+dist/
