@@ -1,0 +1,1 @@
+{"source_id":"cold-v1","cabinet":"cabinet-1","windows":[{"starts":0,"ends":1800,"temp_c":3.0,"sensor":"sensor-A"},{"starts":1800,"ends":3600,"temp_c":3.5,"sensor":"sensor-A"}],"disposals":[]}

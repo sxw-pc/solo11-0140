@@ -1,0 +1,1 @@
+{"source_id":"sample-v1","sample":{"id":"jar-1","meal_id":"lunch-1","cabinet":"cabinet-1","collected_at":1000,"gross_g":140,"tare_g":10,"seal":"seal-A"},"custody":[{"at":1200,"from":"cook-A","to":"keeper-B","seal_ok":true,"signer_a":"cook-A","signer_b":"keeper-B"}]}
