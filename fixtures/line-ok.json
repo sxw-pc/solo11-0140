@@ -1,0 +1,1 @@
+{"source_id":"line-inspection-v1","line_id":"hot-line-1","meal_id":"lunch-1","observed_at":-10,"checks":[{"station":"pan-1","allergen_hint":"nuts","inspected_ok":true,"clean_stamp":"wash-1","inspector_a":"A","inspector_b":"B"},{"station":"tray-1","allergen_hint":null,"inspected_ok":true,"clean_stamp":"wash-2","inspector_a":"A","inspector_b":"C"}]}

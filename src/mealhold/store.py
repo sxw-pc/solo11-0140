@@ -13,6 +13,8 @@ CREATE TABLE IF NOT EXISTS custody_event(id INTEGER PRIMARY KEY,sample_id TEXT,a
 CREATE TABLE IF NOT EXISTS temperature_window(id INTEGER PRIMARY KEY,cabinet TEXT,starts INTEGER,ends INTEGER,temp_c REAL,sensor TEXT,source_id TEXT);
 CREATE TABLE IF NOT EXISTS cold_case(sample_id TEXT PRIMARY KEY,status TEXT,reason TEXT,version INTEGER);
 CREATE TABLE IF NOT EXISTS disposal_event(id INTEGER PRIMARY KEY,sample_id TEXT,at INTEGER,signer_a TEXT,signer_b TEXT,status TEXT,reason TEXT);
+CREATE TABLE IF NOT EXISTS line_inspection(id INTEGER PRIMARY KEY,line_id TEXT,meal_id TEXT,station TEXT,observed_at INTEGER,allergen_hint TEXT,inspected_ok INTEGER,clean_stamp TEXT,inspector_a TEXT,inspector_b TEXT,source_id TEXT);
+CREATE TABLE IF NOT EXISTS line_case(meal_id TEXT PRIMARY KEY,line_id TEXT,status TEXT,reason TEXT);
 """
 
 def connect(path):
