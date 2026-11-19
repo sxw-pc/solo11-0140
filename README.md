@@ -30,3 +30,7 @@ python -m mealhold report --db sample.sqlite
 三个跨系统反例：原料召回使原本合格容器转事故保留且禁止销毁；人数从 80 增至 120 后，130g 净重从合格转不足，而温控仍合格；冷柜超温使完好封签容器转隔离。报告保留原始事件、当前状态和撤回链。
 
 本版不实现真实设备接入、多校区转运、复检拆样、停电争议回放、供应商替换、多探头互证、抽检配额或监管在线查询。
+
+## 增强起点：供应商原料声明
+
+`python -m mealhold supplier --db sample.sqlite --input fixtures/supplier-ok.json` 采入原料批次的供应商过敏原声明。先导入 `meal-ok.json`，再运行 `python -m mealhold label --db sample.sqlite --input fixtures/label-query.json`，可得到当前菜品的直接原料声明汇总；缺少声明时为 `pending`。`report` 能看到声明原文来源和标签草稿。当前只读取同一批次最新一份直接声明，不处理复合原料的子成分、供应商替代品承继、不同交付场景的标签签发或声明冲突。
