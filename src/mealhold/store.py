@@ -10,8 +10,10 @@ CREATE TABLE IF NOT EXISTS meal_batch(id TEXT PRIMARY KEY,served_at INTEGER,pers
 CREATE TABLE IF NOT EXISTS ingredient_lot(id TEXT PRIMARY KEY,meal_id TEXT,allergen TEXT,recalled INTEGER,cleaned INTEGER,source_id TEXT);
 CREATE TABLE IF NOT EXISTS sample_seal(id TEXT PRIMARY KEY,meal_id TEXT,cabinet TEXT,collected_at INTEGER,gross_g INTEGER,tare_g INTEGER,seal TEXT,status TEXT,version INTEGER);
 CREATE TABLE IF NOT EXISTS custody_event(id INTEGER PRIMARY KEY,sample_id TEXT,at INTEGER,from_person TEXT,to_person TEXT,seal_ok INTEGER,signer_a TEXT,signer_b TEXT,status TEXT);
+CREATE TABLE IF NOT EXISTS transfer_event(id INTEGER PRIMARY KEY,sample_id TEXT,from_cabinet TEXT,to_cabinet TEXT,left_at INTEGER,arrived_at INTEGER,seal_ok INTEGER,signer_a TEXT,signer_b TEXT,status TEXT,source_id TEXT);
 CREATE TABLE IF NOT EXISTS temperature_window(id INTEGER PRIMARY KEY,cabinet TEXT,starts INTEGER,ends INTEGER,temp_c REAL,sensor TEXT,source_id TEXT);
 CREATE TABLE IF NOT EXISTS cold_case(sample_id TEXT PRIMARY KEY,status TEXT,reason TEXT,version INTEGER);
+CREATE TABLE IF NOT EXISTS cold_segment(sample_id TEXT,seq INTEGER,cabinet TEXT,starts INTEGER,ends INTEGER,kind TEXT,exposure_s INTEGER,gap INTEGER,sources TEXT,PRIMARY KEY(sample_id,seq));
 CREATE TABLE IF NOT EXISTS disposal_event(id INTEGER PRIMARY KEY,sample_id TEXT,at INTEGER,signer_a TEXT,signer_b TEXT,status TEXT,reason TEXT);
 """
 
