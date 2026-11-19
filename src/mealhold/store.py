@@ -13,6 +13,10 @@ CREATE TABLE IF NOT EXISTS custody_event(id INTEGER PRIMARY KEY,sample_id TEXT,a
 CREATE TABLE IF NOT EXISTS temperature_window(id INTEGER PRIMARY KEY,cabinet TEXT,starts INTEGER,ends INTEGER,temp_c REAL,sensor TEXT,source_id TEXT);
 CREATE TABLE IF NOT EXISTS cold_case(sample_id TEXT PRIMARY KEY,status TEXT,reason TEXT,version INTEGER);
 CREATE TABLE IF NOT EXISTS disposal_event(id INTEGER PRIMARY KEY,sample_id TEXT,at INTEGER,signer_a TEXT,signer_b TEXT,status TEXT,reason TEXT);
+CREATE TABLE IF NOT EXISTS nutrition_case(meal_id TEXT PRIMARY KEY,protein_total_g REAL,protein_per_person_g REAL,target_g REAL,status TEXT,source_id TEXT);
+CREATE TABLE IF NOT EXISTS nutrition_item(meal_id TEXT,lot_id TEXT,amount_g REAL,protein_per_100g REAL,source_id TEXT,PRIMARY KEY(meal_id,lot_id,source_id));
+CREATE TABLE IF NOT EXISTS complaint_report(report_id TEXT PRIMARY KEY,meal_id TEXT,reported_at INTEGER,symptoms_at INTEGER,household TEXT,source_id TEXT);
+CREATE TABLE IF NOT EXISTS complaint_case(meal_id TEXT PRIMARY KEY,report_count INTEGER,status TEXT,source_id TEXT);
 """
 
 def connect(path):

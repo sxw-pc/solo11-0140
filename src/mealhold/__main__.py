@@ -1,11 +1,11 @@
 import argparse,json
 from pathlib import Path
-from . import meal,sample,cold,report
+from . import meal,sample,cold,nutrition,complaint,report
 from .store import connect,read
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('command',choices=['meal','sample','cold','report','demo'])
+    parser.add_argument('command',choices=['meal','sample','cold','nutrition','complaint','report','demo'])
     parser.add_argument('--db',default='mealhold.sqlite');parser.add_argument('--input')
     args=parser.parse_args();db=connect(args.db)
     try:
