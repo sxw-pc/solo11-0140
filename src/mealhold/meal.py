@@ -29,6 +29,11 @@ def run(db,data):
         db.execute('INSERT INTO ingredient_lot(id,meal_id,allergen,recalled,cleaned,source_id) VALUES(?,?,?,?,?,?) '
                    'ON CONFLICT(id) DO UPDATE SET recalled=excluded.recalled,cleaned=excluded.cleaned,source_id=excluded.source_id',
                    (item['id'],mid,item.get('allergen'),int(bool(item.get('recalled'))),int(bool(item.get('cleaned'))),data['source_id']))
+    for window in data.get('observation_windows',[]):
+        starts,ends=int(window['starts']),int(window['ends'])
+        if ends<starts:raise ValueError('invalid observation window')
+        db.execute('INSERT OR IGNORE INTO observation_window(meal_id,starts,ends,source_id) VALUES(?,?,?,?)',
+                   (mid,starts,ends,data['source_id']))
     decide(db,'meal',mid,status,'batch state from ingredients and signed menu',[data['source_id']])
     from .sample import reconcile_meal
     reconcile_meal(db,mid)

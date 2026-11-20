@@ -1,1 +1,1 @@
-{"source_id":"meal-v1","meal":{"id":"lunch-1","served_at":0,"persons":80,"menu_version":1,"signed_at":-100,"allergen":"none"},"ingredients":[{"id":"lot-1","allergen":null,"recalled":false,"cleaned":true}]}
+{"source_id":"meal-v1","meal":{"id":"lunch-1","served_at":0,"persons":80,"menu_version":1,"signed_at":-100,"allergen":"none"},"ingredients":[{"id":"lot-1","allergen":null,"recalled":false,"cleaned":true}],"observation_windows":[{"starts":600,"ends":1800}]}

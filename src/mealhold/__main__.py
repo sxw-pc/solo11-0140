@@ -12,7 +12,7 @@ def main():
         if args.command=='report': result=report.build(db)
         elif args.command=='demo':
             root=Path.cwd()/'fixtures';result=[]
-            for command in ('meal','sample','cold'):
+            for command in ('meal','sample','cold','nutrition','complaint'):
                 with db:result.append(globals()[command].run(db,read(root/f'{command}-ok.json')))
             result={'runs':result,'report':report.build(db)}
         else:

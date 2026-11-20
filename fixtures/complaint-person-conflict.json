@@ -1,0 +1,1 @@
+{"source_id":"complaint-person2","meal_id":"lunch-1","reports":[],"identity_credentials":[{"kind":"same_person","aliases":["a1","a2"],"source":"id-source-x"},{"kind":"distinct_person","aliases":["a1","a2"],"source":"id-source-y"}]}
