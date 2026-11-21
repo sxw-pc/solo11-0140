@@ -1,0 +1,2238 @@
+{
+  "source_id": "disposition-half-box-p098",
+  "meal_id": "lunch-1",
+  "produce": [
+    {
+      "portion_id": "P001",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P002",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P003",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P004",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P005",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P006",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P007",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P008",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P009",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P010",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P011",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P012",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P013",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P014",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P015",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P016",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P017",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P018",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P019",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P020",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P021",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P022",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P023",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P024",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P025",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P026",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P027",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P028",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P029",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P030",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P031",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P032",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P033",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P034",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P035",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P036",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P037",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P038",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P039",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P040",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P041",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P042",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P043",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P044",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P045",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P046",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P047",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P048",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P049",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P050",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P051",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P052",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P053",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P054",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P055",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P056",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P057",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P058",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P059",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P060",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P061",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P062",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P063",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P064",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P065",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P066",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P067",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P068",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P069",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P070",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P071",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P072",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P073",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P074",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P075",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P076",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P077",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P078",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P079",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P080",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P081",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P082",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P083",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P084",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P085",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P086",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P087",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P088",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P089",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P090",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P091",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P092",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P093",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P094",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P095",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P096",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P097",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P098",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P099",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    },
+    {
+      "portion_id": "P100",
+      "mass_g": 250,
+      "station": "tray-1",
+      "produced_at": 0,
+      "produced_by": "cook-A"
+    }
+  ],
+  "events": [
+    {
+      "kind": "served",
+      "portion_id": "P001",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P002",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P003",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P004",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P005",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P006",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P007",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P008",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P009",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P010",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P011",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P012",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P013",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P014",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P015",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P016",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P017",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P018",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P019",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P020",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P021",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P022",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P023",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P024",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P025",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P026",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P027",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P028",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P029",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P030",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P031",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P032",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P033",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P034",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P035",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P036",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P037",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P038",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P039",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P040",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P041",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P042",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P043",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P044",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P045",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P046",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P047",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P048",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P049",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P050",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P051",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P052",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P053",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P054",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P055",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P056",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P057",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P058",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P059",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P060",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P061",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P062",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P063",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P064",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P065",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P066",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P067",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P068",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P069",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P070",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P071",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P072",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P073",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P074",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P075",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P076",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P077",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P078",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P079",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P080",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P081",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P082",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P083",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P084",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P085",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P086",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P087",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P088",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P089",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P090",
+      "at": 100,
+      "station": "outlet-1"
+    },
+    {
+      "kind": "returned",
+      "portion_id": "P091",
+      "at": 200,
+      "station": "return-1"
+    },
+    {
+      "kind": "returned",
+      "portion_id": "P092",
+      "at": 200,
+      "station": "return-1"
+    },
+    {
+      "kind": "returned",
+      "portion_id": "P093",
+      "at": 200,
+      "station": "return-1"
+    },
+    {
+      "kind": "returned",
+      "portion_id": "P094",
+      "at": 200,
+      "station": "return-1"
+    },
+    {
+      "kind": "returned",
+      "portion_id": "P095",
+      "at": 200,
+      "station": "return-1"
+    },
+    {
+      "kind": "returned",
+      "portion_id": "P096",
+      "at": 200,
+      "station": "return-1"
+    },
+    {
+      "kind": "returned",
+      "portion_id": "P097",
+      "at": 200,
+      "station": "return-1"
+    },
+    {
+      "kind": "returned",
+      "portion_id": "P098",
+      "at": 200,
+      "station": "return-1"
+    },
+    {
+      "kind": "returned",
+      "portion_id": "P099",
+      "at": 200,
+      "station": "return-1"
+    },
+    {
+      "kind": "returned",
+      "portion_id": "P100",
+      "at": 200,
+      "station": "return-1"
+    },
+    {
+      "kind": "rework",
+      "portion_id": "P091",
+      "at": 300,
+      "station": "wok-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P091",
+      "at": 400,
+      "station": "outlet-2"
+    },
+    {
+      "kind": "rework",
+      "portion_id": "P092",
+      "at": 300,
+      "station": "wok-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P092",
+      "at": 400,
+      "station": "outlet-2"
+    },
+    {
+      "kind": "rework",
+      "portion_id": "P093",
+      "at": 300,
+      "station": "wok-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P093",
+      "at": 400,
+      "station": "outlet-2"
+    },
+    {
+      "kind": "rework",
+      "portion_id": "P094",
+      "at": 300,
+      "station": "wok-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P094",
+      "at": 400,
+      "station": "outlet-2"
+    },
+    {
+      "kind": "rework",
+      "portion_id": "P095",
+      "at": 300,
+      "station": "wok-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P095",
+      "at": 400,
+      "station": "outlet-2"
+    },
+    {
+      "kind": "rework",
+      "portion_id": "P096",
+      "at": 300,
+      "station": "wok-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P096",
+      "at": 400,
+      "station": "outlet-2"
+    },
+    {
+      "kind": "rework",
+      "portion_id": "P097",
+      "at": 300,
+      "station": "wok-1"
+    },
+    {
+      "kind": "served",
+      "portion_id": "P097",
+      "at": 400,
+      "station": "outlet-2"
+    },
+    {
+      "kind": "rework",
+      "portion_id": "P098",
+      "at": 300,
+      "station": "wok-1"
+    },
+    {
+      "kind": "split",
+      "portion_id": "P098",
+      "at": 350,
+      "station": "pack-1",
+      "to": [
+        "P098A",
+        "P098B"
+      ],
+      "child_mass_g": [
+        125,
+        125
+      ]
+    },
+    {
+      "kind": "served",
+      "portion_id": "P098A",
+      "at": 400,
+      "station": "outlet-2"
+    }
+  ],
+  "receipts": [
+    {
+      "receipt_id": "R001",
+      "portion_id": "P001",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R001"
+    },
+    {
+      "receipt_id": "R002",
+      "portion_id": "P002",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R002"
+    },
+    {
+      "receipt_id": "R003",
+      "portion_id": "P003",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R003"
+    },
+    {
+      "receipt_id": "R004",
+      "portion_id": "P004",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R004"
+    },
+    {
+      "receipt_id": "R005",
+      "portion_id": "P005",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R005"
+    },
+    {
+      "receipt_id": "R006",
+      "portion_id": "P006",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R006"
+    },
+    {
+      "receipt_id": "R007",
+      "portion_id": "P007",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R007"
+    },
+    {
+      "receipt_id": "R008",
+      "portion_id": "P008",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R008"
+    },
+    {
+      "receipt_id": "R009",
+      "portion_id": "P009",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R009"
+    },
+    {
+      "receipt_id": "R010",
+      "portion_id": "P010",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R010"
+    },
+    {
+      "receipt_id": "R011",
+      "portion_id": "P011",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R011"
+    },
+    {
+      "receipt_id": "R012",
+      "portion_id": "P012",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R012"
+    },
+    {
+      "receipt_id": "R013",
+      "portion_id": "P013",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R013"
+    },
+    {
+      "receipt_id": "R014",
+      "portion_id": "P014",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R014"
+    },
+    {
+      "receipt_id": "R015",
+      "portion_id": "P015",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R015"
+    },
+    {
+      "receipt_id": "R016",
+      "portion_id": "P016",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R016"
+    },
+    {
+      "receipt_id": "R017",
+      "portion_id": "P017",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R017"
+    },
+    {
+      "receipt_id": "R018",
+      "portion_id": "P018",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R018"
+    },
+    {
+      "receipt_id": "R019",
+      "portion_id": "P019",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R019"
+    },
+    {
+      "receipt_id": "R020",
+      "portion_id": "P020",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R020"
+    },
+    {
+      "receipt_id": "R021",
+      "portion_id": "P021",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R021"
+    },
+    {
+      "receipt_id": "R022",
+      "portion_id": "P022",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R022"
+    },
+    {
+      "receipt_id": "R023",
+      "portion_id": "P023",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R023"
+    },
+    {
+      "receipt_id": "R024",
+      "portion_id": "P024",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R024"
+    },
+    {
+      "receipt_id": "R025",
+      "portion_id": "P025",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R025"
+    },
+    {
+      "receipt_id": "R026",
+      "portion_id": "P026",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R026"
+    },
+    {
+      "receipt_id": "R027",
+      "portion_id": "P027",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R027"
+    },
+    {
+      "receipt_id": "R028",
+      "portion_id": "P028",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R028"
+    },
+    {
+      "receipt_id": "R029",
+      "portion_id": "P029",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R029"
+    },
+    {
+      "receipt_id": "R030",
+      "portion_id": "P030",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R030"
+    },
+    {
+      "receipt_id": "R031",
+      "portion_id": "P031",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R031"
+    },
+    {
+      "receipt_id": "R032",
+      "portion_id": "P032",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R032"
+    },
+    {
+      "receipt_id": "R033",
+      "portion_id": "P033",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R033"
+    },
+    {
+      "receipt_id": "R034",
+      "portion_id": "P034",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R034"
+    },
+    {
+      "receipt_id": "R035",
+      "portion_id": "P035",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R035"
+    },
+    {
+      "receipt_id": "R036",
+      "portion_id": "P036",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R036"
+    },
+    {
+      "receipt_id": "R037",
+      "portion_id": "P037",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R037"
+    },
+    {
+      "receipt_id": "R038",
+      "portion_id": "P038",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R038"
+    },
+    {
+      "receipt_id": "R039",
+      "portion_id": "P039",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R039"
+    },
+    {
+      "receipt_id": "R040",
+      "portion_id": "P040",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R040"
+    },
+    {
+      "receipt_id": "R041",
+      "portion_id": "P041",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R041"
+    },
+    {
+      "receipt_id": "R042",
+      "portion_id": "P042",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R042"
+    },
+    {
+      "receipt_id": "R043",
+      "portion_id": "P043",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R043"
+    },
+    {
+      "receipt_id": "R044",
+      "portion_id": "P044",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R044"
+    },
+    {
+      "receipt_id": "R045",
+      "portion_id": "P045",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R045"
+    },
+    {
+      "receipt_id": "R046",
+      "portion_id": "P046",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R046"
+    },
+    {
+      "receipt_id": "R047",
+      "portion_id": "P047",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R047"
+    },
+    {
+      "receipt_id": "R048",
+      "portion_id": "P048",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R048"
+    },
+    {
+      "receipt_id": "R049",
+      "portion_id": "P049",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R049"
+    },
+    {
+      "receipt_id": "R050",
+      "portion_id": "P050",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R050"
+    },
+    {
+      "receipt_id": "R051",
+      "portion_id": "P051",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R051"
+    },
+    {
+      "receipt_id": "R052",
+      "portion_id": "P052",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R052"
+    },
+    {
+      "receipt_id": "R053",
+      "portion_id": "P053",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R053"
+    },
+    {
+      "receipt_id": "R054",
+      "portion_id": "P054",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R054"
+    },
+    {
+      "receipt_id": "R055",
+      "portion_id": "P055",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R055"
+    },
+    {
+      "receipt_id": "R056",
+      "portion_id": "P056",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R056"
+    },
+    {
+      "receipt_id": "R057",
+      "portion_id": "P057",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R057"
+    },
+    {
+      "receipt_id": "R058",
+      "portion_id": "P058",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R058"
+    },
+    {
+      "receipt_id": "R059",
+      "portion_id": "P059",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R059"
+    },
+    {
+      "receipt_id": "R060",
+      "portion_id": "P060",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R060"
+    },
+    {
+      "receipt_id": "R061",
+      "portion_id": "P061",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R061"
+    },
+    {
+      "receipt_id": "R062",
+      "portion_id": "P062",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R062"
+    },
+    {
+      "receipt_id": "R063",
+      "portion_id": "P063",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R063"
+    },
+    {
+      "receipt_id": "R064",
+      "portion_id": "P064",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R064"
+    },
+    {
+      "receipt_id": "R065",
+      "portion_id": "P065",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R065"
+    },
+    {
+      "receipt_id": "R066",
+      "portion_id": "P066",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R066"
+    },
+    {
+      "receipt_id": "R067",
+      "portion_id": "P067",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R067"
+    },
+    {
+      "receipt_id": "R068",
+      "portion_id": "P068",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R068"
+    },
+    {
+      "receipt_id": "R069",
+      "portion_id": "P069",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R069"
+    },
+    {
+      "receipt_id": "R070",
+      "portion_id": "P070",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R070"
+    },
+    {
+      "receipt_id": "R071",
+      "portion_id": "P071",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R071"
+    },
+    {
+      "receipt_id": "R072",
+      "portion_id": "P072",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R072"
+    },
+    {
+      "receipt_id": "R073",
+      "portion_id": "P073",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R073"
+    },
+    {
+      "receipt_id": "R074",
+      "portion_id": "P074",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R074"
+    },
+    {
+      "receipt_id": "R075",
+      "portion_id": "P075",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R075"
+    },
+    {
+      "receipt_id": "R076",
+      "portion_id": "P076",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R076"
+    },
+    {
+      "receipt_id": "R077",
+      "portion_id": "P077",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R077"
+    },
+    {
+      "receipt_id": "R078",
+      "portion_id": "P078",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R078"
+    },
+    {
+      "receipt_id": "R079",
+      "portion_id": "P079",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R079"
+    },
+    {
+      "receipt_id": "R080",
+      "portion_id": "P080",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R080"
+    },
+    {
+      "receipt_id": "R081",
+      "portion_id": "P081",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R081"
+    },
+    {
+      "receipt_id": "R082",
+      "portion_id": "P082",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R082"
+    },
+    {
+      "receipt_id": "R083",
+      "portion_id": "P083",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R083"
+    },
+    {
+      "receipt_id": "R084",
+      "portion_id": "P084",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R084"
+    },
+    {
+      "receipt_id": "R085",
+      "portion_id": "P085",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R085"
+    },
+    {
+      "receipt_id": "R086",
+      "portion_id": "P086",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R086"
+    },
+    {
+      "receipt_id": "R087",
+      "portion_id": "P087",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R087"
+    },
+    {
+      "receipt_id": "R088",
+      "portion_id": "P088",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R088"
+    },
+    {
+      "receipt_id": "R089",
+      "portion_id": "P089",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R089"
+    },
+    {
+      "receipt_id": "R090",
+      "portion_id": "P090",
+      "outlet": "outlet-1",
+      "at": 100,
+      "signer": "cashier-A",
+      "signature": "sig-R090"
+    },
+    {
+      "receipt_id": "R091",
+      "portion_id": "P091",
+      "outlet": "outlet-2",
+      "at": 400,
+      "signer": "cashier-B",
+      "signature": "sig-R091"
+    },
+    {
+      "receipt_id": "R092",
+      "portion_id": "P092",
+      "outlet": "outlet-2",
+      "at": 400,
+      "signer": "cashier-B",
+      "signature": "sig-R092"
+    },
+    {
+      "receipt_id": "R093",
+      "portion_id": "P093",
+      "outlet": "outlet-2",
+      "at": 400,
+      "signer": "cashier-B",
+      "signature": "sig-R093"
+    },
+    {
+      "receipt_id": "R094",
+      "portion_id": "P094",
+      "outlet": "outlet-2",
+      "at": 400,
+      "signer": "cashier-B",
+      "signature": "sig-R094"
+    },
+    {
+      "receipt_id": "R095",
+      "portion_id": "P095",
+      "outlet": "outlet-2",
+      "at": 400,
+      "signer": "cashier-B",
+      "signature": "sig-R095"
+    },
+    {
+      "receipt_id": "R096",
+      "portion_id": "P096",
+      "outlet": "outlet-2",
+      "at": 400,
+      "signer": "cashier-B",
+      "signature": "sig-R096"
+    },
+    {
+      "receipt_id": "R097",
+      "portion_id": "P097",
+      "outlet": "outlet-2",
+      "at": 400,
+      "signer": "cashier-B",
+      "signature": "sig-R097"
+    },
+    {
+      "receipt_id": "R098A",
+      "portion_id": "P098A",
+      "outlet": "outlet-2",
+      "at": 400,
+      "signer": "cashier-B",
+      "signature": "sig-R098A"
+    }
+  ],
+  "destructions": [
+    {
+      "disposal_id": "D099",
+      "at": 500,
+      "signer_a": "duty-A",
+      "signer_b": "duty-B",
+      "declared_qty": 1,
+      "reason": "held beyond service",
+      "portions": [
+        "P099"
+      ]
+    },
+    {
+      "disposal_id": "D100",
+      "at": 500,
+      "signer_a": "duty-A",
+      "signer_b": "duty-C",
+      "declared_qty": 1,
+      "reason": "held beyond service",
+      "portions": [
+        "P100"
+      ]
+    }
+  ],
+  "discrepancies": [
+    {
+      "discrepancy_id": "CD-P098B",
+      "portion_id": "P098B",
+      "at": 600,
+      "signer_a": "duty-A",
+      "signer_b": "duty-B",
+      "note": "unreceived half of split P098"
+    }
+  ]
+}

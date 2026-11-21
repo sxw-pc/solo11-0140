@@ -33,3 +33,50 @@ def run(db,data):
     from .sample import reconcile_meal
     reconcile_meal(db,mid)
     return {'meal':mid,'status':status,'menu_version':version,'required_grams':required_grams(persons)}
+
+
+def registrations(db,data):
+    """Register the outlets and duty managers that a physical ledger may cite.
+
+    Registration records who is authorised to sign outlet receipts, dual-sign a
+    destruction or co-sign a count discrepancy. It is evidence only: it never
+    changes a menu version or a physical portion's disposition.
+    """
+    state=ingest(db,'registration',data)
+    if state!='new':return {'source_id':data['source_id'],'status':state}
+    meal_id=data['meal_id']
+    if not db.execute('SELECT 1 FROM meal_batch WHERE id=?',(meal_id,)).fetchone():
+        raise ValueError('meal must be recorded before registering signers')
+    for outlet in data.get('outlets',[]):
+        decide(db,'outlet',outlet['id'],'registered',
+               'outlet may sign its own serving receipts',
+               [meal_id,outlet.get('name'),data['source_id']])
+    for person in data.get('duty_managers',[]):
+        decide(db,'duty-manager',person,'registered',
+               'duty manager may dual-sign destruction or count discrepancies',
+               [meal_id,data['source_id']])
+    return {'meal':meal_id,'outlets':len(data.get('outlets',[])),
+            'duty_managers':len(data.get('duty_managers',[]))}
+
+
+def servable_check(db,meal_id):
+    """Report physical serving totals alongside the independent holding rules.
+
+    A station hold does not delete a portion's physical disposition, but a
+    portion that passed the held station cannot be reported as verified
+    servable. The signed menu and retain evidence are reported untouched.
+    """
+    from .disposition import servable_units
+    menu=db.execute('SELECT * FROM meal_batch WHERE id=?',(meal_id,)).fetchone()
+    if not menu:return {'meal':meal_id,'status':'missing'}
+    line=db.execute('SELECT status,reason FROM line_case WHERE meal_id=?',(meal_id,)).fetchone()
+    physical=servable_units(db,meal_id)
+    return {'meal':meal_id,
+            'menu_status':menu['status'],
+            'menu_version':menu['menu_version'],
+            'signed_persons':menu['persons'],
+            'line_status':line['status'] if line else None,
+            'line_reason':line['reason'] if line else None,
+            'physical':physical,
+            'verified_servable':physical['verified_servable_units'],
+            'unverified':physical['unverified_units']}

@@ -1,0 +1,16 @@
+{
+  "source_id": "line-late-independent-check",
+  "line_id": "hot-line-1",
+  "meal_id": "lunch-1",
+  "observed_at": 600,
+  "checks": [
+    {
+      "station": "wok-1",
+      "allergen_hint": "nuts",
+      "inspected_ok": false,
+      "clean_stamp": "",
+      "inspector_a": "E",
+      "inspector_b": "F"
+    }
+  ]
+}

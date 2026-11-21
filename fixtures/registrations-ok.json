@@ -1,0 +1,19 @@
+{
+  "source_id": "registrations-v1",
+  "meal_id": "lunch-1",
+  "outlets": [
+    {
+      "id": "outlet-1",
+      "name": "main counter"
+    },
+    {
+      "id": "outlet-2",
+      "name": "rework counter"
+    }
+  ],
+  "duty_managers": [
+    "duty-A",
+    "duty-B",
+    "duty-C"
+  ]
+}

@@ -15,13 +15,115 @@ CREATE TABLE IF NOT EXISTS cold_case(sample_id TEXT PRIMARY KEY,status TEXT,reas
 CREATE TABLE IF NOT EXISTS disposal_event(id INTEGER PRIMARY KEY,sample_id TEXT,at INTEGER,signer_a TEXT,signer_b TEXT,status TEXT,reason TEXT);
 CREATE TABLE IF NOT EXISTS line_inspection(id INTEGER PRIMARY KEY,line_id TEXT,meal_id TEXT,station TEXT,observed_at INTEGER,allergen_hint TEXT,inspected_ok INTEGER,clean_stamp TEXT,inspector_a TEXT,inspector_b TEXT,source_id TEXT);
 CREATE TABLE IF NOT EXISTS line_case(meal_id TEXT PRIMARY KEY,line_id TEXT,status TEXT,reason TEXT);
+CREATE TABLE IF NOT EXISTS line_station_case(meal_id TEXT,station TEXT,status TEXT,observed_at INTEGER,reason TEXT,source_id TEXT,PRIMARY KEY(meal_id,station));
+
+-- Physical portion disposition ledger -------------------------------------
+CREATE TABLE IF NOT EXISTS meal_portion(
+    portion_id TEXT PRIMARY KEY,
+    meal_id TEXT,
+    produced_at INTEGER,
+    station TEXT,
+    mass_g REAL,
+    units REAL,
+    produced_by TEXT,
+    origin TEXT,
+    source_id TEXT,
+    source_digest TEXT);
+CREATE TABLE IF NOT EXISTS portion_event(
+    id INTEGER PRIMARY KEY,
+    portion_id TEXT,
+    meal_id TEXT,
+    kind TEXT,
+    at INTEGER,
+    station TEXT,
+    container TEXT,
+    mass_g REAL,
+    actor TEXT,
+    source_id TEXT,
+    source_digest TEXT);
+CREATE TABLE IF NOT EXISTS portion_edge(
+    parent_id TEXT,
+    child_id TEXT,
+    kind TEXT,
+    mass_g REAL,
+    units REAL,
+    event_at INTEGER,
+    source_id TEXT,
+    source_digest TEXT,
+    PRIMARY KEY(parent_id,child_id));
+CREATE TABLE IF NOT EXISTS serving_receipt(
+    receipt_id TEXT PRIMARY KEY,
+    portion_id TEXT,
+    meal_id TEXT,
+    outlet TEXT,
+    at INTEGER,
+    signer TEXT,
+    signature TEXT,
+    source_id TEXT,
+    source_digest TEXT);
+CREATE TABLE IF NOT EXISTS destruction(
+    disposal_id TEXT PRIMARY KEY,
+    meal_id TEXT,
+    at INTEGER,
+    signer_a TEXT,
+    signer_b TEXT,
+    declared_qty INTEGER,
+    reason TEXT,
+    source_id TEXT,
+    source_digest TEXT);
+CREATE TABLE IF NOT EXISTS destruction_item(
+    disposal_id TEXT,
+    portion_id TEXT,
+    PRIMARY KEY(disposal_id,portion_id));
+CREATE TABLE IF NOT EXISTS stock_count(
+    stock_id TEXT PRIMARY KEY,
+    meal_id TEXT,
+    at INTEGER,
+    counted_by TEXT,
+    note TEXT,
+    source_id TEXT,
+    source_digest TEXT);
+CREATE TABLE IF NOT EXISTS stock_item(
+    stock_id TEXT,
+    portion_id TEXT,
+    PRIMARY KEY(stock_id,portion_id));
+CREATE TABLE IF NOT EXISTS count_discrepancy(
+    discrepancy_id TEXT PRIMARY KEY,
+    meal_id TEXT,
+    portion_id TEXT,
+    at INTEGER,
+    signer_a TEXT,
+    signer_b TEXT,
+    note TEXT,
+    source_id TEXT,
+    source_digest TEXT);
+CREATE TABLE IF NOT EXISTS closeout(
+    id INTEGER PRIMARY KEY,
+    closeout_id TEXT,
+    meal_id TEXT,
+    contract TEXT,
+    status TEXT,
+    produced_units REAL,
+    served_units REAL,
+    destroyed_units REAL,
+    stock_units REAL,
+    unknown_units REAL,
+    unverified_units REAL,
+    verified_servable_units REAL,
+    pending_units REAL,
+    reason TEXT,
+    evidence TEXT);
 """
 
 def connect(path):
     db=sqlite3.connect(path);db.row_factory=sqlite3.Row;db.executescript(SCHEMA);return db
 def read(path):return json.loads(Path(path).read_text(encoding='utf-8'))
+def canonical(data):
+    return json.dumps(data,sort_keys=True,ensure_ascii=False,separators=(',',':'))
+def payload_digest(data):
+    return hashlib.sha256(canonical(data).encode()).hexdigest()
 def ingest(db,system,data):
-    raw=json.dumps(data,sort_keys=True,ensure_ascii=False,separators=(',',':'))
+    raw=canonical(data)
     digest=hashlib.sha256(raw.encode()).hexdigest();sid=data['source_id']
     old=db.execute('SELECT digest FROM source WHERE system=? AND source_id=?',(system,sid)).fetchall()
     if any(r['digest']!=digest for r in old):
