@@ -14,6 +14,8 @@ def main():
             root=Path.cwd()/'fixtures';result=[]
             for command in ('meal','sample','cold'):
                 with db:result.append(globals()[command].run(db,read(root/f'{command}-ok.json')))
+            for name in ('complaint-ok.json','identity-roster.json','complaint-tickets.json','complaint-r4.json','identity-roster-2.json'):
+                with db:result.append(complaint.run(db,read(root/name)))
             result={'runs':result,'report':report.build(db)}
         else:
             if not args.input:parser.error('--input required')

@@ -1,0 +1,1 @@
+{"source_id":"meal-v2","meal":{"id":"lunch-2","served_at":3600,"persons":60,"menu_version":1,"signed_at":3500,"allergen":"none"},"observation_window":{"starts":4200,"ends":5400},"ingredients":[{"id":"lot-2","allergen":null,"recalled":false,"cleaned":true}]}

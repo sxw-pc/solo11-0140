@@ -1,0 +1,1 @@
+{"source_id":"complaint-v4","meal_id":"lunch-2","reports":[{"report_id":"r5","alias":"acct-05","household":"H3","symptoms_from":4300,"symptoms_to":4600,"reported_at":5000,"verify_source":"clinic-log-3"},{"report_id":"r6","alias":"acct-06","household":"H4","symptoms_from":4400,"symptoms_to":4700,"reported_at":5100,"verify_source":"clinic-log-3"}]}

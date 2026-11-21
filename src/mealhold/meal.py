@@ -10,6 +10,10 @@ def run(db,data):
     if state!='new':return {'source_id':data['source_id'],'status':state}
     meal=data['meal'];mid=meal['id'];persons=int(meal['persons'])
     if persons<1:raise ValueError('persons must be positive')
+    window=data.get('observation_window')
+    if window:
+        wstarts,wends=int(window['starts']),int(window['ends'])
+        if wends<wstarts:raise ValueError('observation window inverted')
     old=db.execute('SELECT * FROM meal_batch WHERE id=?',(mid,)).fetchone()
     version=int(meal['menu_version']);signed=int(meal['signed_at'])
     if old and signed<old['signed_at']:
@@ -25,6 +29,10 @@ def run(db,data):
     db.execute('INSERT INTO meal_batch(id,served_at,persons,menu_version,signed_at,status,allergen) VALUES(?,?,?,?,?,?,?) '
                'ON CONFLICT(id) DO UPDATE SET served_at=excluded.served_at,persons=excluded.persons,menu_version=excluded.menu_version,signed_at=excluded.signed_at,status=excluded.status,allergen=excluded.allergen',
                (mid,int(meal['served_at']),persons,version,signed,status,meal.get('allergen')))
+    if window:
+        db.execute('INSERT INTO observation_window VALUES(?,?,?,?) ON CONFLICT(meal_id) DO UPDATE SET starts=excluded.starts,ends=excluded.ends,source_id=excluded.source_id',
+                   (mid,wstarts,wends,data['source_id']))
+        decide(db,'observation-window',mid,'registered',f'observation window [{wstarts},{wends}] registered for complaint screening',[data['source_id']])
     for item in data['ingredients']:
         db.execute('INSERT INTO ingredient_lot(id,meal_id,allergen,recalled,cleaned,source_id) VALUES(?,?,?,?,?,?) '
                    'ON CONFLICT(id) DO UPDATE SET recalled=excluded.recalled,cleaned=excluded.cleaned,source_id=excluded.source_id',

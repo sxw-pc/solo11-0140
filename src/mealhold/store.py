@@ -15,8 +15,16 @@ CREATE TABLE IF NOT EXISTS cold_case(sample_id TEXT PRIMARY KEY,status TEXT,reas
 CREATE TABLE IF NOT EXISTS disposal_event(id INTEGER PRIMARY KEY,sample_id TEXT,at INTEGER,signer_a TEXT,signer_b TEXT,status TEXT,reason TEXT);
 CREATE TABLE IF NOT EXISTS nutrition_case(meal_id TEXT PRIMARY KEY,protein_total_g REAL,protein_per_person_g REAL,target_g REAL,status TEXT,source_id TEXT);
 CREATE TABLE IF NOT EXISTS nutrition_item(meal_id TEXT,lot_id TEXT,amount_g REAL,protein_per_100g REAL,source_id TEXT,PRIMARY KEY(meal_id,lot_id,source_id));
-CREATE TABLE IF NOT EXISTS complaint_report(report_id TEXT PRIMARY KEY,meal_id TEXT,reported_at INTEGER,symptoms_at INTEGER,household TEXT,source_id TEXT);
+CREATE TABLE IF NOT EXISTS complaint_report(report_id TEXT PRIMARY KEY,meal_id TEXT,alias TEXT,household TEXT,symptoms_from INTEGER,symptoms_to INTEGER,reported_at INTEGER,verify_source TEXT,source_id TEXT);
 CREATE TABLE IF NOT EXISTS complaint_case(meal_id TEXT PRIMARY KEY,report_count INTEGER,status TEXT,source_id TEXT);
+CREATE TABLE IF NOT EXISTS observation_window(meal_id TEXT PRIMARY KEY,starts INTEGER,ends INTEGER,source_id TEXT);
+CREATE TABLE IF NOT EXISTS complaint_time_check(report_id TEXT PRIMARY KEY,symptoms_from INTEGER,symptoms_to INTEGER,verify_source TEXT,source_id TEXT);
+CREATE TABLE IF NOT EXISTS complaint_ticket_check(report_id TEXT,meal_id TEXT,verified INTEGER,verify_source TEXT,source_id TEXT,PRIMARY KEY(report_id,meal_id));
+CREATE TABLE IF NOT EXISTS identity_credential(credential_id TEXT PRIMARY KEY,issuer TEXT,source_id TEXT);
+CREATE TABLE IF NOT EXISTS identity_link(credential_id TEXT,alias TEXT,person TEXT,household TEXT,PRIMARY KEY(credential_id,alias));
+CREATE TABLE IF NOT EXISTS complaint_alert(id INTEGER PRIMARY KEY,meal_id TEXT,version INTEGER,people_min INTEGER,people_max INTEGER,households_min INTEGER,households_max INTEGER,sentinel TEXT,cluster TEXT,excluded TEXT,detail TEXT,source_id TEXT);
+CREATE TABLE IF NOT EXISTS alert_world(alert_id INTEGER,world_index INTEGER,alias TEXT,person TEXT,household TEXT);
+CREATE TABLE IF NOT EXISTS complaint_exclusion(id INTEGER PRIMARY KEY,meal_id TEXT,kind TEXT,detail TEXT,source_id TEXT);
 """
 
 def connect(path):

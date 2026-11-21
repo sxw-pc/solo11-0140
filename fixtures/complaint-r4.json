@@ -1,0 +1,1 @@
+{"source_id":"complaint-v2","meal_id":"lunch-1","reports":[{"report_id":"r4","alias":"acct-04","household":"H2","symptoms_from":1150,"symptoms_to":1450,"reported_at":2300,"verify_source":"clinic-log-2"}],"ticket_checks":[{"report_id":"r4","meal_id":"lunch-1","verified":true,"verify_source":"ticket-office"}]}
