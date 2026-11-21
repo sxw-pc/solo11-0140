@@ -13,6 +13,13 @@ CREATE TABLE IF NOT EXISTS custody_event(id INTEGER PRIMARY KEY,sample_id TEXT,a
 CREATE TABLE IF NOT EXISTS temperature_window(id INTEGER PRIMARY KEY,cabinet TEXT,starts INTEGER,ends INTEGER,temp_c REAL,sensor TEXT,source_id TEXT);
 CREATE TABLE IF NOT EXISTS cold_case(sample_id TEXT PRIMARY KEY,status TEXT,reason TEXT,version INTEGER);
 CREATE TABLE IF NOT EXISTS disposal_event(id INTEGER PRIMARY KEY,sample_id TEXT,at INTEGER,signer_a TEXT,signer_b TEXT,status TEXT,reason TEXT);
+CREATE TABLE IF NOT EXISTS serving_portion(id TEXT PRIMARY KEY,meal_id TEXT,window TEXT,served_from INTEGER,served_to INTEGER,kind TEXT,source_id TEXT);
+CREATE TABLE IF NOT EXISTS meal_ticket(id TEXT PRIMARY KEY,queue TEXT,window TEXT,pickup_from INTEGER,pickup_to INTEGER,source_id TEXT);
+CREATE TABLE IF NOT EXISTS delivery_claim(id INTEGER PRIMARY KEY,portion_id TEXT,ticket_id TEXT,at INTEGER,kind TEXT,source_id TEXT,UNIQUE(portion_id,ticket_id,at,kind));
+CREATE TABLE IF NOT EXISTS attribution_run(id INTEGER PRIMARY KEY,signature TEXT,attributions INTEGER,truncated INTEGER);
+CREATE TABLE IF NOT EXISTS attribution(id INTEGER PRIMARY KEY,run_id INTEGER,idx INTEGER,ticket_id TEXT,portion_id TEXT,meal_id TEXT,recalled INTEGER);
+CREATE TABLE IF NOT EXISTS exposure_class(id INTEGER PRIMARY KEY,run_id INTEGER,ticket_id TEXT,queue TEXT,category TEXT,reason TEXT);
+CREATE TABLE IF NOT EXISTS notification(id INTEGER PRIMARY KEY,contract TEXT,version INTEGER,queue TEXT,kind TEXT,certainty TEXT,reason TEXT,run_id INTEGER);
 """
 
 def connect(path):

@@ -32,4 +32,6 @@ def run(db,data):
     decide(db,'meal',mid,status,'batch state from ingredients and signed menu',[data['source_id']])
     from .sample import reconcile_meal
     reconcile_meal(db,mid)
-    return {'meal':mid,'status':status,'menu_version':version,'required_grams':required_grams(persons)}
+    from .exposure import reconcile as reconcile_exposure
+    exposure=reconcile_exposure(db)
+    return {'meal':mid,'status':status,'menu_version':version,'required_grams':required_grams(persons),'exposure':exposure}
