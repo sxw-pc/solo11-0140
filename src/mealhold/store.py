@@ -7,14 +7,18 @@ CREATE TABLE IF NOT EXISTS source(id INTEGER PRIMARY KEY,system TEXT,source_id T
 CREATE TABLE IF NOT EXISTS source_conflict(id INTEGER PRIMARY KEY,system TEXT,source_id TEXT,digest TEXT,payload TEXT);
 CREATE TABLE IF NOT EXISTS decision(id INTEGER PRIMARY KEY,system TEXT,object_id TEXT,status TEXT,reason TEXT,evidence TEXT,previous INTEGER);
 CREATE TABLE IF NOT EXISTS meal_batch(id TEXT PRIMARY KEY,served_at INTEGER,persons INTEGER,menu_version INTEGER,signed_at INTEGER,status TEXT,allergen TEXT);
-CREATE TABLE IF NOT EXISTS ingredient_lot(id TEXT PRIMARY KEY,meal_id TEXT,allergen TEXT,recalled INTEGER,cleaned INTEGER,source_id TEXT);
+CREATE TABLE IF NOT EXISTS ingredient_lot(id TEXT PRIMARY KEY,meal_id TEXT,allergen TEXT,recalled INTEGER,cleaned INTEGER,source_id TEXT,menu_version INTEGER);
 CREATE TABLE IF NOT EXISTS sample_seal(id TEXT PRIMARY KEY,meal_id TEXT,cabinet TEXT,collected_at INTEGER,gross_g INTEGER,tare_g INTEGER,seal TEXT,status TEXT,version INTEGER);
 CREATE TABLE IF NOT EXISTS custody_event(id INTEGER PRIMARY KEY,sample_id TEXT,at INTEGER,from_person TEXT,to_person TEXT,seal_ok INTEGER,signer_a TEXT,signer_b TEXT,status TEXT);
 CREATE TABLE IF NOT EXISTS temperature_window(id INTEGER PRIMARY KEY,cabinet TEXT,starts INTEGER,ends INTEGER,temp_c REAL,sensor TEXT,source_id TEXT);
 CREATE TABLE IF NOT EXISTS cold_case(sample_id TEXT PRIMARY KEY,status TEXT,reason TEXT,version INTEGER);
 CREATE TABLE IF NOT EXISTS disposal_event(id INTEGER PRIMARY KEY,sample_id TEXT,at INTEGER,signer_a TEXT,signer_b TEXT,status TEXT,reason TEXT);
-CREATE TABLE IF NOT EXISTS supplier_declaration(id INTEGER PRIMARY KEY,lot_id TEXT,issued_at INTEGER,present TEXT,may_contact TEXT,signer TEXT,source_id TEXT);
-CREATE TABLE IF NOT EXISTS meal_label(meal_id TEXT PRIMARY KEY,status TEXT,present TEXT,may_contact TEXT,reason TEXT);
+CREATE TABLE IF NOT EXISTS supplier_declaration(id INTEGER PRIMARY KEY,lot_id TEXT,issued_at INTEGER,present TEXT,may_contact TEXT,absent TEXT,signer TEXT,source_id TEXT);
+CREATE TABLE IF NOT EXISTS composition_link(id INTEGER PRIMARY KEY,parent TEXT,child TEXT,component TEXT,amount_g REAL,declared_by TEXT,issued_at INTEGER,cleaned INTEGER,source_id TEXT);
+CREATE TABLE IF NOT EXISTS substitution_cert(id INTEGER PRIMARY KEY,from_product TEXT,to_product TEXT,components TEXT,allergens TEXT,signer_a TEXT,signer_b TEXT,issued_at INTEGER,valid INTEGER,source_id TEXT);
+CREATE TABLE IF NOT EXISTS meal_label(meal_id TEXT PRIMARY KEY,status TEXT,present TEXT,may_contact TEXT,unknown TEXT,reason TEXT,menu_version INTEGER,detail TEXT);
+CREATE TABLE IF NOT EXISTS label_trace(id INTEGER PRIMARY KEY,meal_id TEXT,menu_version INTEGER,allergen TEXT,state TEXT,lot_id TEXT,path TEXT,source_id TEXT,via TEXT);
+CREATE TABLE IF NOT EXISTS label_signoff(id INTEGER PRIMARY KEY,meal_id TEXT,commission TEXT,version INTEGER,decision TEXT,reason TEXT,present TEXT,may_contact TEXT,unknown TEXT,menu_version INTEGER,evidence TEXT);
 """
 
 def connect(path):

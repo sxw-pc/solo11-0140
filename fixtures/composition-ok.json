@@ -1,0 +1,1 @@
+{"source_id":"comp-s2-v1","links":[{"parent":"S2","child":"soy-base-2","component":"soy-base","amount_g":30,"declared_by":"supplier2-QA","issued_at":20,"cleaned":true},{"parent":"S2","child":"sesame-adj-2","component":"sesame","amount_g":5,"declared_by":"supplier2-QA","issued_at":20,"cleaned":false}]}

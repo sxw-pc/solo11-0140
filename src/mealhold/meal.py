@@ -5,6 +5,47 @@ from .store import ingest,decide
 def required_grams(persons):
     return 125*math.ceil(persons/100)
 
+def _declared_allergens(meal,lots):
+    declared=set()
+    if meal['allergen'] and meal['allergen']!='none':declared.add(meal['allergen'])
+    for lot in lots:
+        if lot['allergen']:declared.add(lot['allergen'])
+    return declared
+
+def reassess_serving(db,mid):
+    """Re-decide serving safety from current lots plus supplier/composition evidence.
+
+    A recalled child lot anywhere in the actual composition closure blocks the meal, and a
+    child lot proven to contain an allergen the recipe never declared puts it on hold. A clean
+    cleaning record never lifts a recall.
+    """
+    from . import supplier
+    meal=db.execute('SELECT * FROM meal_batch WHERE id=?',(mid,)).fetchone()
+    if not meal:return None
+    lots=db.execute('SELECT * FROM ingredient_lot WHERE meal_id=? AND menu_version=?',(mid,meal['menu_version'])).fetchall()
+    analysis=supplier.analyze(db,mid)
+    recalled_lots=[]
+    for lot in analysis['nodes']:
+        row=db.execute('SELECT recalled FROM ingredient_lot WHERE id=?',(lot,)).fetchone()
+        if row and row['recalled']:recalled_lots.append(lot)
+    declared=_declared_allergens(meal,lots)
+    undeclared=sorted(set(analysis['present'])-declared)
+    contact=any(lot['allergen'] and not lot['cleaned'] for lot in lots)
+    if recalled_lots:
+        status='recalled';reason=f"recalled lot in composition closure: {','.join(sorted(recalled_lots))}"
+    elif contact:
+        status='allergen_hold';reason='cleaning record needed for allergen line'
+    elif undeclared:
+        status='allergen_hold';reason=f"proven allergen absent from recipe declaration: {','.join(undeclared)}"
+    else:
+        status='served';reason='batch state from ingredients and signed menu'
+    if status!=meal['status']:
+        db.execute('UPDATE meal_batch SET status=? WHERE id=?',(status,mid))
+    decide(db,'meal',mid,status,reason,[mid])
+    from .sample import reconcile_meal
+    reconcile_meal(db,mid)
+    return status
+
 def run(db,data):
     state=ingest(db,'meal',data)
     if state!='new':return {'source_id':data['source_id'],'status':state}
@@ -13,9 +54,9 @@ def run(db,data):
     old=db.execute('SELECT * FROM meal_batch WHERE id=?',(mid,)).fetchone()
     version=int(meal['menu_version']);signed=int(meal['signed_at'])
     if old and signed<old['signed_at']:
-        version=old['menu_version'];signed=old['signed_at']
         decide(db,'menu',mid,'stale','older menu cannot replace signed served version',[data['source_id']])
-    else:decide(db,'menu',mid,'effective',f'menu version {version} effective',[data['source_id']])
+        return {'meal':mid,'status':old['status'],'menu_version':old['menu_version'],'required_grams':required_grams(old['persons'])}
+    decide(db,'menu',mid,'effective',f'menu version {version} effective',[data['source_id']])
     recalled=any(i.get('recalled',False) for i in data['ingredients'])
     contact=any(i.get('allergen') and not i.get('cleaned',False) for i in data['ingredients'])
     status='recalled' if recalled else 'allergen_hold' if contact else 'served'
@@ -26,10 +67,11 @@ def run(db,data):
                'ON CONFLICT(id) DO UPDATE SET served_at=excluded.served_at,persons=excluded.persons,menu_version=excluded.menu_version,signed_at=excluded.signed_at,status=excluded.status,allergen=excluded.allergen',
                (mid,int(meal['served_at']),persons,version,signed,status,meal.get('allergen')))
     for item in data['ingredients']:
-        db.execute('INSERT INTO ingredient_lot(id,meal_id,allergen,recalled,cleaned,source_id) VALUES(?,?,?,?,?,?) '
-                   'ON CONFLICT(id) DO UPDATE SET recalled=excluded.recalled,cleaned=excluded.cleaned,source_id=excluded.source_id',
-                   (item['id'],mid,item.get('allergen'),int(bool(item.get('recalled'))),int(bool(item.get('cleaned'))),data['source_id']))
-    decide(db,'meal',mid,status,'batch state from ingredients and signed menu',[data['source_id']])
-    from .sample import reconcile_meal
-    reconcile_meal(db,mid)
+        db.execute('INSERT INTO ingredient_lot(id,meal_id,allergen,recalled,cleaned,source_id,menu_version) VALUES(?,?,?,?,?,?,?) '
+                   'ON CONFLICT(id) DO UPDATE SET allergen=excluded.allergen,recalled=excluded.recalled,cleaned=excluded.cleaned,source_id=excluded.source_id,menu_version=excluded.menu_version',
+                   (item['id'],mid,item.get('allergen'),int(bool(item.get('recalled'))),int(bool(item.get('cleaned'))),data['source_id'],version))
+    status=None
+    for row in db.execute('SELECT id FROM meal_batch ORDER BY id').fetchall():
+        current=reassess_serving(db,row['id'])
+        if row['id']==mid:status=current
     return {'meal':mid,'status':status,'menu_version':version,'required_grams':required_grams(persons)}
